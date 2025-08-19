@@ -1,0 +1,327 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #0d1b2a;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f0a500;
+}
+
+.experience {
+    font-size: 0.9rem;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f0a500;
+}
+
+/* Section Common Styles */
+.section {
+    min-height: 90vh;
+    padding: 60px 10%;          /* Space around section */
+    background-color: #0d1b2a;  /* Dark blue background */
+    color: white;               /* White text for readability */
+    line-height: 1.8;           /* Proper line spacing for paragraphs */
+    font-size: 1rem;            /* Base font size */
+}
+
+.section h2 {
+    font-size: 2.2rem;          /* Slightly bigger for headings */
+    color: rgb(220, 139, 9);       /* Original golden brown accent */
+    text-align: center;          /* Center the heading */
+    margin-bottom: 30px;        /* Gap between heading and first paragraph */
+}
+
+.section p {
+    margin-bottom: 20px;        /* Gap between paragraphs */
+}
+
+.section p strong {
+    color: rgb(219, 137, 6);       /* Highlight titles like Backend/Frontend */
+}
+/* Home Section */
+.home-container {
+    display: flex;
+    align-items: center; /* Vertically centers both image and content */
+    justify-content: center; /* Optional: centers the whole container horizontally */
+    gap: 50px; /* Space between image and content */
+    padding: 50px;
+}
+
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Horizontally centers the image inside its div */
+    align-items: center; /* Vertically centers the image inside its div */
+}
+
+.home-image img {
+    width: 480px;      /* Slightly bigger than before */
+    height: 480px;     /* Keep it square for circular shape */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;  /* Keeps the image proportionate */
+    border: 4px solid #f0a500; /* Optional stylish border */
+}
+
+.home-content {
+    flex: 1;
+    color: white;
+}
+
+.home-content h1 span {
+    color: #f0a500;
+}
+
+.home-content p {
+    margin: 15px 0;
+}
+
+.social-links a {
+    color: white;
+    margin-right: 15px;
+    font-size: 1.3rem;
+}
+
+.social-links a:hover {
+    color: #f0a500;
+}
+
+.home-content button {
+    padding: 10px 25px;
+    background-color: #f0a500;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.home-content button:hover {
+    background-color: white;
+    color: #0d1b2a;
+}
+
+/* Experience & Projects */
+.experience-details {
+    margin-top: 20px;
+}
+
+.experience-card {
+    background-color: #1b2a3a; /* Slightly lighter dark blue */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    color: white;
+}
+
+.experience-card .company-name {
+    color: #f0a500;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.experience-card .role-duration {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #ffffffb3; /* Slightly faded white for subtlety */
+}
+
+.experience-card h4 {
+    margin-bottom: 10px;
+    color: #f0a500;
+}
+
+.experience-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.experience-card ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+.project-card {
+    border: 1px solid #f0a500; /* Accent border */
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    background-color: #1b2a44; /* Slightly darker background for project cards */
+    color: white;
+}
+
+.project-card h3.project-name {
+    color: #f0a500; /* Highlight project name */
+    margin-bottom: 15px;
+}
+
+.project-card ul {
+    list-style: disc inside;
+    padding-left: 15px;
+}
+
+.project-card ul li {
+    margin-bottom: 10px; /* Proper line spacing for bullets */
+    line-height: 1.6;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Space between categories */
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.skill-category {
+    background-color: #1b2a3a; /* Slightly lighter dark blue */
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 250px;
+    color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.skill-category h3 {
+    color: #f0a500;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.skill-category ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skill-category ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.section {
+    min-height: 90vh;
+    padding: 60px 10%;
+    background-color: #0d1b2a;
+    color: white;
+    line-height: 1.8;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #f0a500;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-intro {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.contact-card {
+    background-color: #1b2a41;
+    padding: 15px 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px; /* smaller card width */
+    height: 75%;
+    transition: 0.3s;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.contact-card i {
+    font-size: 1.8rem;
+    color: #f0a500;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.contact-card p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.contact-card a {
+    color: #f0a500;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+
+.connect {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
