@@ -194,6 +194,26 @@ nav {
     margin-bottom: 10px;
     line-height: 1.6;
 }
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #b5006d; /* LinkedIn blue */
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+
+}
+.project-link-container {
+    text-align: center; /* Centers the button */
+    margin-top: 15px;
+} 
+
+.project-link:hover {
+  background-color: #098200;
+}
 .project-card {
     border: 1px solid #f0a500; /* Accent border */
     padding: 20px;
