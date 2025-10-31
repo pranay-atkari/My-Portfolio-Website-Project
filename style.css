@@ -1,7 +1,7 @@
-/* Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-/* Reset */
+
 *{
     margin: 0;
     padding: 0;
@@ -69,49 +69,49 @@ nav {
 /* Section Common Styles */
 .section {
     min-height: 90vh;
-    padding: 60px 10%;          /* Space around section */
-    background-color: #0d1b2a;  /* Dark blue background */
-    color: white;               /* White text for readability */
-    line-height: 1.8;           /* Proper line spacing for paragraphs */
-    font-size: 1rem;            /* Base font size */
+    padding: 60px 10%;          
+    background-color: #0d1b2a;  
+    color: white;               
+    line-height: 1.8;          
+    font-size: 1rem;            
 }
 
 .section h2 {
-    font-size: 2.2rem;          /* Slightly bigger for headings */
-    color: rgb(220, 139, 9);       /* Original golden brown accent */
-    text-align: center;          /* Center the heading */
-    margin-bottom: 30px;        /* Gap between heading and first paragraph */
+    font-size: 2.2rem;         
+    color: rgb(220, 139, 9);       
+    text-align: center;         
+    margin-bottom: 30px;         
 }
 
 .section p {
-    margin-bottom: 20px;        /* Gap between paragraphs */
+    margin-bottom: 20px;         
 }
 
 .section p strong {
-    color: rgb(219, 137, 6);       /* Highlight titles like Backend/Frontend */
+    color: rgb(219, 137, 6);        
 }
 /* Home Section */
 .home-container {
     display: flex;
-    align-items: center; /* Vertically centers both image and content */
-    justify-content: center; /* Optional: centers the whole container horizontally */
-    gap: 50px; /* Space between image and content */
+    align-items: center;  
+    justify-content: center;  
+    gap: 50px;  
     padding: 50px;
 }
 
 .home-image {
     flex: 1;
     display: flex;
-    justify-content: center; /* Horizontally centers the image inside its div */
-    align-items: center; /* Vertically centers the image inside its div */
+    justify-content: center; 
+    align-items: center;  
 }
 
 .home-image img {
-    width: 480px;      /* Slightly bigger than before */
-    height: 480px;     /* Keep it square for circular shape */
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover;  /* Keeps the image proportionate */
-    border: 4px solid #f0a500; /* Optional stylish border */
+    width: 480px;       
+    height: 480px;     
+    border-radius: 50%;  
+    object-fit: cover;  
+    border: 4px solid #f0a500;  
 }
 
 .home-content {
@@ -158,7 +158,7 @@ nav {
 }
 
 .experience-card {
-    background-color: #1b2a3a; /* Slightly lighter dark blue */
+    background-color: #1b2a3a;  
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 25px;
@@ -177,7 +177,7 @@ nav {
     font-size: 1rem;
     margin-bottom: 15px;
     font-style: italic;
-    color: #ffffffb3; /* Slightly faded white for subtlety */
+    color: #ffffffb3;  
 }
 
 .experience-card h4 {
@@ -194,11 +194,14 @@ nav {
     margin-bottom: 10px;
     line-height: 1.6;
 }
+
+
+/* Project Section */
 .project-link {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 14px;
-  background-color: #b5006d; /* LinkedIn blue */
+  background-color: #b5006d;  
   color: white;
   border-radius: 6px;
   text-decoration: none;
@@ -207,7 +210,7 @@ nav {
 
 }
 .project-link-container {
-    text-align: center; /* Centers the button */
+    text-align: center;  
     margin-top: 15px;
 } 
 
@@ -215,16 +218,16 @@ nav {
   background-color: #098200;
 }
 .project-card {
-    border: 1px solid #f0a500; /* Accent border */
+    border: 1px solid #f0a500;  
     padding: 20px;
     margin-bottom: 25px;
     border-radius: 8px;
-    background-color: #1b2a44; /* Slightly darker background for project cards */
+    background-color: #1b2a44;  
     color: white;
 }
 
 .project-card h3.project-name {
-    color: #f0a500; /* Highlight project name */
+    color: #f0a500;  
     margin-bottom: 15px;
 }
 
@@ -234,19 +237,19 @@ nav {
 }
 
 .project-card ul li {
-    margin-bottom: 10px; /* Proper line spacing for bullets */
+    margin-bottom: 10px;  
     line-height: 1.6;
 }
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px; /* Space between categories */
+    gap: 40px;  
     justify-content: center;
     margin-top: 30px;
 }
 
 .skill-category {
-    background-color: #1b2a3a; /* Slightly lighter dark blue */
+    background-color: #1b2a3a;  
     padding: 20px;
     border-radius: 10px;
     min-width: 250px;
@@ -307,7 +310,7 @@ nav {
     padding: 15px 10px;
     border-radius: 10px;
     text-align: center;
-    width: 250px; /* smaller card width */
+    width: 250px;  
     height: 75%;
     transition: 0.3s;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
