@@ -4,24 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pranay Portfolio</title>
+
+    <!-- Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav>
-      <div class="navbar-container">
-        <div class="logo-experience">
-          <div class="logo">Pranay Shankarrao Atkari</div>
-          <div class="experience">
-            Java Developer (1 Years Hands-On Experience)
-          </div>
+    <!-- NAV -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <div class="brand">
+          <div class="name">Pranay Shankarrao Atkari</div>
+          <div class="meta">Java Developer (1 Years Hands-On Experience)</div>
         </div>
-        <ul class="nav-links">
+
+        <button id="burger" class="burger" aria-label="menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Key Skills</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -31,27 +37,25 @@
       </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="section home-section">
-      <div class="home-container">
-        <!-- Left: Profile Image -->
-        <div
-          class="home-image"
-          data-aos="zoom-in-right"
-          data-aos-duration="1500"
-        >
-          <img
-            src="WhatsApp Image 2025-08-19 at 10.27.08_ae39d475.jpg"
-            alt="Pranay Atkari"
-          />
+    <!-- HERO -->
+    <header id="home" class="hero">
+      <div class="hero-wrap">
+        <div class="hero-left">
+          <div class="portrait">
+            <img src="WhatsApp Image 2025-08-19 at 10.27.08_ae39d475.jpg" alt="Pranay Atkari" />
+            <div class="portrait-border"></div>
+          </div>
+          <div class="quick-info">
+            <div class="role">Java Developer</div>
+            <div class="years">1 Years Hands-On Experience</div>
+          </div>
         </div>
 
-        <!-- Right: About Content -->
-        <div class="home-content" data-aos="fade-left" data-aos-duration="1500">
+        <div class="hero-right">
           <h1>Hey, I'm <span>Pranay Atkari</span></h1>
           <h3>Java Developer | 1 Years Hands-On Experience</h3>
 
-          <p>
+          <p class="desc">
             Java Backend Developer withover 1 Year of hands-on experience designing,
             implementing, and maintain ing scalable backend systems using Java
             and Spring Boot. Skilled in building robust RESTful APIs, inte
@@ -61,372 +65,267 @@
             teams.
           </p>
 
-          <div class="social-links">
-            <a href="https://github.com/pranay-atkari" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
+          <div class="cta-row">
             <a
-              href="https://www.linkedin.com/in/pranay-atkari-3ba018297/"
+              class="btn resume"
+              href="https://drive.google.com/file/d/12H1kCGgkfb504anaXk7yjKhNq4m52zDg/view?usp=drivesdk"
               target="_blank"
+              ><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a
             >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://www.facebook.com/yourprofile" target="_blank">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </div>
 
-          <a
-            href="https://drive.google.com/file/d/12H1kCGgkfb504anaXk7yjKhNq4m52zDg/view?usp=drivesdk"
-            target="_blank"
-          >
-            <button>Download Resume</button>
-          </a>
+            <div class="socials">
+              <a href="https://github.com/pranay-atkari" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/pranay-atkari-3ba018297/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </header>
 
-    <!-- About Section -->
+    <!-- ABOUT -->
     <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>
-        I am currently working as a Java Full-Stack Developer at
-        <span class="company-name">Vedaniti Technologies PVT LTD</span>, where I
-        have gained 1 Year  of professional experience in designing and
-        developing robust web applications. My work involves both backend and
-        frontend development, allowing me to contribute to the entire technology
-        stack.
-      </p>
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am currently working as a Java Full-Stack Developer at
+          <span class="company-name">Vedaniti Technologies PVT LTD</span>, where I
+          have gained 1 Year of professional experience in designing and
+          developing robust web applications. My work involves both backend and
+          frontend development, allowing me to contribute to the entire technology
+          stack.
+        </p>
 
-      <p>
-        <strong>Backend Development:</strong> I use Java with Spring Boot to
+        <p><strong>Backend Development:</strong> I use Java with Spring Boot to
         create RESTful APIs, manage database interactions using JPA/Hibernate,
         and implement efficient entity relationships with MySQL/PostgreSQL. I
         also focus on code quality by applying exception handling, logging,
-        validation, and pagination for scalable applications.
-      </p>
+        validation, and pagination for scalable applications.</p>
 
-      <p>
-        <strong>Frontend Development:</strong> I use React.js to build dynamic,
+        <p><strong>Frontend Development:</strong> I use React.js to build dynamic,
         responsive, and interactive user interfaces. I work with React
         components, hooks, and state management, integrating REST APIs from the
         backend to ensure seamless data flow. I also apply modern CSS techniques
-        and libraries for styling and enhancing user experience.
-      </p>
+        and libraries for styling and enhancing user experience.</p>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-      <h2>Key Skills</h2>
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Key Skills</h2>
 
-      <div class="skills-container">
-        <div class="skill-category">
-          <h3>Programming Languages</h3>
-          <ul>
-            <li>Java</li>
-          </ul>
-        </div>
+        <div class="skills-grid">
+          <div class="skill">
+            <h3>Programming Languages</h3>
+            <ul><li>Java</li></ul>
+          </div>
 
-        <div class="skill-category">
-          <h3>Backend / Java Technologies</h3>
-          <ul>
-            <li>Core Java</li>
-            <li>Spring Boot</li>
-            <li>Spring MVC</li>
-            <li>Hibernate</li>
-            <li>JSP & Servlets</li>
-            <li>RESTful APIs</li>
-            <li>JDBC</li>
-            <li>Log4j</li>
-          </ul>
-        </div>
+          <div class="skill">
+            <h3>Backend / Java Technologies</h3>
+            <ul>
+              <li>Core Java</li>
+              <li>Spring Boot</li>
+              <li>Spring MVC</li>
+              <li>Hibernate</li>
+              <li>JSP & Servlets</li>
+              <li>RESTful APIs</li>
+              <li>JDBC</li>
+              <li>Log4j</li>
+            </ul>
+          </div>
 
-        <div class="skill-category">
-          <h3>Frontend Development</h3>
-          <ul>
-            <li>HTML5, CSS3,</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Redux Toolkit</li>
-            <li>Bootstrap</li>
-          </ul>
-        </div>
+          <div class="skill">
+            <h3>Frontend Development</h3>
+            <ul>
+              <li>HTML5, CSS3</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>Redux Toolkit</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
 
-        <div class="skill-category">
-          <h3>Database Technologies</h3>
-          <ul>
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-          </ul>
-        </div>
+          <div class="skill">
+            <h3>Database Technologies</h3>
+            <ul><li>MySQL</li><li>PostgreSQL</li></ul>
+          </div>
 
-        <div class="skill-category">
-          <h3>Tools & Version Control</h3>
-          <ul>
-            <li>Git</li>
-            <li>GitHub / GitLab</li>
-            <li>Postman</li>
-            <li>IntelliJ IDEA</li>
-            <li>Vs Code</li>
-            <li>Eclipse</li>
-          </ul>
-        </div>
+          <div class="skill">
+            <h3>Tools & Version Control</h3>
+            <ul>
+              <li>Git</li>
+              <li>GitHub / GitLab</li>
+              <li>Postman</li>
+              <li>IntelliJ IDEA</li>
+              <li>Vs Code</li>
+              <li>Eclipse</li>
+            </ul>
+          </div>
 
-        <div class="skill-category">
-          <h3>Deployment & Hosting</h3>
-          <ul>
-            <li>Docker</li>
-          </ul>
-        </div>
+          <div class="skill">
+            <h3>Deployment & Hosting</h3>
+            <ul><li>Docker</li></ul>
+          </div>
 
-        <div class="skill-category">
-          <h3>Design & Architecture</h3>
-          <ul>
-            <li>MVC Pattern</li>
-            <li>DTO Pattern</li>
-          </ul>
+          <div class="skill">
+            <h3>Design & Architecture</h3>
+            <ul><li>MVC Pattern</li><li>DTO Pattern</li></ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- EXPERIENCE -->
     <section id="experience" class="section">
-      <h2>Experience</h2>
+      <div class="container">
+        <h2>Experience</h2>
 
-      <div class="experience-details">
-        <div class="experience-card">
-          <h3 class="company-name">Vedaniti Technologies Pvt Ltd </h3>
-          <p class="role-duration">
-            Java Full-Stack Developer | January 2025 – Present
-          </p>
+        <div class="exp-list">
+          <div class="exp-item">
+            <h3 class="company-name">Vedaniti Technologies Pvt Ltd </h3>
+            <p class="role-duration">Java Full-Stack Developer | January 2025 – Present</p>
+            <ul>
+              <li>
+                <h4 class="project-name">Rentometer – Rent Management System:</h4>
+                A property rent management system backend designed to manage flat
+                listings, owner-tenant details, rent collection, and complaint
+                resolution. Provides secure APIs for CRUD operations, filtering,
+                and file uploads.
+              </li>
 
-          <!-- Projects / Highlights -->
-          <!-- <h4>Project Highlights:</h4> -->
-          <ul>
-            <li>
-              <h4 class="project-name">Rentometer – Rent Management System:</h4>
-              A property rent management system backend designed to manage flat
-              listings, owner-tenant details, rent collection, and complaint
-              resolution. Provides secure APIs for CRUD operations, filtering,
-              and file uploads.
-            </li>
-            <li>
-              Designed and developed RESTful APIs for flat registration,
-              owner/tenant details, rent payment, and maintenance requests using
-              Spring Boot.
-            </li>
-            <li>
-              Implemented JWT-based authentication and role-based access control
-              using Spring Security.
-            </li>
-            <li>
-              Features for real-time tracking of submissions, form
-              activation/deactivation, and centralized data access.
-            </li>
-            <li>
-              Logging using SLF4j + Logback for auditing and debugging. Applied
-              DTOs (Data Transfer Object) to manage data flow between entities
-              and response models.
-            </li>
-            <li>
-              Integrated Spring Data JPA with MySQL/PostgreSQL for relational
-              data management. Implemented file upload/download APIs for tenant
-              documents and rent receipts.
-            </li>
-            <li>
-              Developed pagination and filtering APIs for large datasets such as
-              rent history and flat listings.
-            </li>
-            <li>
-              Followed Layered Architecture (Controller → Service → Repository)
-              and SOLID principles.
-            </li>
-          </ul>
+              <li>Designed and developed RESTful APIs for flat registration, owner/tenant details, rent payment, and maintenance requests using Spring Boot.</li>
+
+              <li>Implemented JWT-based authentication and role-based access control using Spring Security.</li>
+
+              <li>Logging using SLF4j + Logback for auditing and debugging. Applied DTOs (Data Transfer Object) to manage data flow between entities and response models.</li>
+
+              <li>Integrated Spring Data JPA with MySQL/PostgreSQL for relational data management. Implemented file upload/download APIs for tenant documents and rent receipts.</li>
+
+              <li>Developed pagination and filtering APIs for large datasets such as rent history and flat listings.</li>
+
+              <li>Followed Layered Architecture (Controller → Service → Repository) and SOLID principles.</li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <h3 class="company-name">Class Management App (Police Academy):</h3>
+            <ul>
+              <li>A web-based class and training management platform for Police Academy cadets/(Students)and instructors to manage attendance, batches, courses, and assessments in a digital format.</li>
+              <li>Designed and developed RESTful APIs for cadets/(Students) registration, instructor assignment, batch scheduling, and result management using Spring Boot.</li>
+              <li>Implemented <code>BeanUtils.copyProperties()</code> for DTO–Entity conversion and applied <code>@Data</code> annotation (Lombok) to reduce boilerplate code.</li>
+              <li>Used Spring Data JPA with PostgreSQL for relational data handling and applied validation annotations like <code>@Valid</code> and <code>@NotNull</code>.</li>
+              <li>Implemented JWT-based authentication and role-based authorization for Admin, Instructor, and Cadet modules using Spring Security.</li>
+              <li>Developed APIs for attendance tracking, course mapping, and batch-wise performance reports with pagination and filtering.</li>
+              <li>Integrated logging and exception handling using SLF4J + Logback for better observability.</li>
+              <li>Followed clean Layered Architecture (Controller → Service → Repository) and adhered to SOLID principles for scalable code design.</li>
+            </ul>
+          </div>
         </div>
-
-        <div class="experience-card">
-          <!-- Projects / Highlights -->
-          <!-- <h4>Project Highlights:</h4> -->
-          <ul>
-            <li>
-              <h4 class="project-name">
-                Class Management App (Police Academy):
-              </h4>
-              A web-based class and training management platform for Police
-              Academy cadets/(Students)and instructors to manage attendance,
-              batches, courses, and assessments in a digital format.
-            </li>
-            <li>
-              Designed and developed RESTful APIs for cadets/(Students)
-              registration, instructor assignment, batch scheduling, and result
-              management using Spring Boot.
-            </li>
-            <li>
-              Implemented <code>BeanUtils.copyProperties()</code> for DTO–Entity
-              conversion and applied <code>@Data</code> annotation (Lombok) to
-              reduce boilerplate code.
-            </li>
-            <li>
-              Used Spring Data JPA with PostgreSQL for relational data handling
-              and applied validation annotations like <code>@Valid</code> and
-              <code>@NotNull</code>.
-            </li>
-            <li>
-              Implemented JWT-based authentication and role-based authorization
-              for Admin, Instructor, and Cadet modules using Spring Security.
-            </li>
-            <li>
-              Developed APIs for attendance tracking, course mapping, and
-              batch-wise performance reports with pagination and filtering.
-            </li>
-            <li>
-              Integrated logging and exception handling using SLF4J + Logback
-              for better observability.
-            </li>
-            <li>
-              Followed clean Layered Architecture (Controller → Service →
-              Repository) and adhered to SOLID principles for scalable code
-              design.
-            </li>
-          </ul>
-        </div>
-
-        
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Projects</h2>
 
-      <!-- Student Management System -->
-      <div class="project-card">
-        <h3 class="project-name">Student Management System</h3>
-        <ul>
-          <li>
-            Developed a full-stack Student Management System to handle student
-            records including personal info, course enrollment, grades, and
-            attendance.
-          </li>
-          <li>
-            Implemented RESTful APIs using Spring Boot and Spring Data JPA for
-            student CRUD operations and course management.
-          </li>
-          <li>
-            Used MySQL/PostgreSQL for relational data storage with proper entity
-            relationships (One-to-Many between students and courses).
-          </li>
-          <li>
-            Built a responsive UI using React.js with dynamic forms and modals
-            for adding/editing student records.
-          </li>
-          <li>
-            Integrated pagination and filtering on the student listing screen
-            for scalability with large datasets.
-          </li>
-        </ul>
-        <!-- Live Link -->
-        <!-- <div class="project-link-container">
-    <a href="https://student-management-app-daxd.onrender.com" target="_blank" class="project-link">🔗 View Live Project</a>
-    </div>  -->
-      </div>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3 class="project-name">Student Management System</h3>
+            <ul>
+              <li>Developed a full-stack Student Management System to handle student records including personal info, course enrollment, grades, and attendance.</li>
+              <li>Implemented RESTful APIs using Spring Boot and Spring Data JPA for student CRUD operations and course management.</li>
+              <li>Used MySQL/PostgreSQL for relational data storage with proper entity relationships (One-to-Many between students and courses).</li>
+              <li>Built a responsive UI using React.js with dynamic forms and modals for adding/editing student records.</li>
+              <li>Integrated pagination and filtering on the student listing screen for scalability with large datasets.</li>
+            </ul>
+          </div>
 
-      <!-- Ebook Store -->
-      <div class="project-card">
-        <h3 class="project-name">Ebook Store</h3>
-        <ul>
-          <li>
-            Developed a dynamic Ebook Store web application using Java Spring
-            Boot (backend) and React.js (frontend).
-          </li>
-          <li>
-            Implemented user registration and login functionality with secure
-            password hashing and JWT authentication.
-          </li>
-          <li>
-            Built RESTful APIs for managing ebooks, categories, users, and
-            orders using Spring Data JPA.
-          </li>
-          <li>
-            Designed relational database schema in MySQL/PostgreSQL to store
-            book metadata, user purchases, and cart details.
-          </li>
-          <li>
-            Created a modern and responsive user interface using React.js with
-            React Router and Axios for API communication.
-          </li>
-        </ul>
-        <!-- Live Link -->
-        <!-- <div class="project-link-container">
-  <a href="https://ebook-app-store-project-2.onrender.com" target="_blank" class="project-link">
-    🔗 View Live Project
-  </a>
-</div> -->
+          <div class="project-card">
+            <h3 class="project-name">Ebook Store</h3>
+            <ul>
+              <li>Developed a dynamic Ebook Store web application using Java Spring Boot (backend) and React.js (frontend).</li>
+              <li>Implemented user registration and login functionality with secure password hashing and JWT authentication.</li>
+              <li>Built RESTful APIs for managing ebooks, categories, users, and orders using Spring Data JPA.</li>
+              <li>Designed relational database schema in MySQL/PostgreSQL to store book metadata, user purchases, and cart details.</li>
+              <li>Created a modern and responsive user interface using React.js with React Router and Axios for API communication.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- CONTACT -->
     <section id="contact" class="section">
-      <h2>Contact Me</h2>
-      <p class="contact-intro">
-        Get in touch! I am always open to discussing new projects,
-        opportunities, or collaborations.
-      </p>
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p class="contact-intro">Get in touch! I am always open to discussing new projects, opportunities, or collaborations.</p>
 
-      <div class="contact-cards">
-        <div class="contact-card">
-          <i class="fa-solid fa-envelope"></i>
-          <p>
-            <a href="mailto:pranayatkari58@gmail.com"
-              >pranayatkari58@gmail.com</a
-            >
-          </p>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <p><a href="mailto:pranayatkari58@gmail.com">pranayatkari58@gmail.com</a></p>
+          </div>
+
+          <div class="contact-card">
+            <i class="fa-brands fa-linkedin"></i>
+            <p><a href="https://www.linkedin.com/in/pranay-atkari-3ba018297" target="_blank">LinkedIn/pranay-atkari</a></p>
+          </div>
+
+          <div class="contact-card">
+            <i class="fa-brands fa-github"></i>
+            <p><a href="https://github.com/pranay-atkari" target="_blank">github.com/pranay-atkari</a></p>
+          </div>
+
+          <div class="contact-card">
+            <i class="fa-solid fa-phone"></i>
+            <p><a href="tel:+919876543210">+91 9112317253</a></p>
+          </div>
+
+          <div class="contact-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Pune, Maharashtra, India</p>
+          </div>
         </div>
-        <div class="contact-card">
-          <i class="fa-brands fa-linkedin"></i>
-          <p>
-            <a
-              href="https://www.linkedin.com/in/pranay-atkari-3ba018297"
-              target="_blank"
-              >LinkedIn/pranay-atkari</a
-            >
-          </p>
-        </div>
-        <div class="contact-card">
-          <i class="fa-brands fa-github"></i>
-          <p>
-            <a href="https://github.com/pranay-atkari" target="_blank"
-              >github.com/pranay-atkari</a
-            >
-          </p>
-        </div>
-        <div class="contact-card">
-          <i class="fa-solid fa-phone"></i>
-          <p>
-            <a href="tel:+919876543210">+91 9112317253</a>
-          </p>
-        </div>
-        <div class="contact-card">
-          <i class="fa-solid fa-location-dot"></i>
-          <p>Pune, Maharashtra, India</p>
-        </div>
+
+        <p class="connect">Let's connect and build something amazing together!</p>
       </div>
-
-      <p class="connect">Let's connect and build something amazing together!</p>
     </section>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- JS -->
     <script>
-      AOS.init({ offset: 0, duration: 1000 });
+      // Mobile nav toggle
+      const burger = document.getElementById('burger');
+      const navLinks = document.getElementById('navLinks');
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('open');
+        navLinks.classList.toggle('open');
+      });
 
-      // Smooth Scroll
-      const links = document.querySelectorAll(".nav-links a");
-      links.forEach((link) => {
-        link.addEventListener("click", function (e) {
+      // Smooth scroll and active link highlight
+      document.querySelectorAll('.nav-links a').forEach((link) => {
+        link.addEventListener('click', function (e) {
           e.preventDefault();
-          document
-            .querySelector(this.getAttribute("href"))
-            .scrollIntoView({ behavior: "smooth" });
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+          navLinks.classList.remove('open');
+          burger.classList.remove('open');
+        });
+      });
+
+      window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('section[id]');
+        const y = window.scrollY + window.innerHeight / 3;
+        sections.forEach((s) => {
+          const a = document.querySelector('.nav-links a[href="#' + s.id + '"]');
+          if (!a) return;
+          if (y >= s.offsetTop && y < s.offsetTop + s.offsetHeight) {
+            document.querySelectorAll('.nav-links a').forEach((n) => n.classList.remove('active'));
+            a.classList.add('active');
+          }
         });
       });
     </script>
