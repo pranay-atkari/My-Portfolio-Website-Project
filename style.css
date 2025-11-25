@@ -109,7 +109,7 @@ body::before{
 
 /* PROJECTS */
 .project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:12px}
-.project-card{background:var(--panel);padding:16px;border-radius:12px;border:1px solid rgba(3,54,66,0.05);transition:transform .28s}
+.project-card{background:var(--panel);padding:28px;border-radius:25px;border:1px solid rgba(3,54,66,0.05);transition:transform .28s}
 .project-card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(3,54,66,0.06)}
 
 /* CONTACT */
