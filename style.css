@@ -132,12 +132,19 @@ body {
 }
 
 .portrait img {
-  width: 260px;
-  height: 260px;
+  width: 300px;                 /* slightly bigger */
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid var(--border-glass);
-  box-shadow: var(--shadow);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+/* ONLY HOVER EFFECT */
+.portrait img:hover {
+  transform: scale(1.07);       /* smooth zoom */
+  box-shadow: 0 25px 60px rgba(56, 189, 248, 0.35); /* subtle glow */
 }
 
 .quick-info {
