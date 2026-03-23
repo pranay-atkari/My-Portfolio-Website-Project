@@ -6,6 +6,12 @@
 /* =====================
    ROOT VARIABLES
 ===================== */
+
+.company-name {
+  font-weight: 600;
+  color: var(--accent);
+}
+
 :root {
   --bg-main: #0b0f2a;
   --glass: rgba(255, 255, 255, 0.08);
@@ -451,11 +457,11 @@ body::before {
 ===================== */
 .contact-card i {
   font-size: 1.6rem;
-  color: var(--accent);
+  color: var(--text-main);
 }
 
 .contact-card a {
-  color: var(--accent);
+  color: var(--text-main);
   text-decoration: none;
 }
 
